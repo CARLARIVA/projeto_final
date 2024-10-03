@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Work Report Table</title>
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    
+    <!-- Buttons Section -->
+    <div class="flex justify-between mb-4">
+      <div class="flex space-x-2">
+        <button class="bg-blue-700 text-white px-4 py-2 rounded">PÁGINA DE LOGIN</button>
+        <button class="bg-blue-700 text-white px-4 py-2 rounded">CADASTRO</button>
+        <button class="bg-blue-700 text-white px-4 py-2 rounded">RELATÓRIO</button>
+        <button class="bg-blue-700 text-white px-4 py-2 rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+      </div>
+      <button class="border-gray-300 border px-4 py-2 rounded">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+          <path d="M4 4h16v16H4z"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Filter Section -->
+    <div class="flex space-x-2 mb-4">
+      <input type="date" placeholder="DATA INICIAL" class="bg-gray-200 px-4 py-2 rounded">
+      <input type="date" placeholder="DATA FINAL" class="bg-gray-200 px-4 py-2 rounded">
+      <button class="bg-gray-300 px-4 py-2 rounded">FILTRAR</button>
+    </div>
+    
+    <!-- Table Section -->
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white">
+        <thead>
+          <tr>
+            <th class="bg-gray-200 px-4 py-2">DATA</th>
+            <th class="bg-gray-200 px-4 py-2">HORA DE ENTRADA</th>
+            <th class="bg-gray-200 px-4 py-2">HORA DE SAÍDA</th>
+            <th class="bg-gray-200 px-4 py-2">QUANT. HORAS 50%</th>
+            <th class="bg-gray-200 px-4 py-2">QUANT. HORAS 100%</th>
+            <th class="bg-gray-200 px-4 py-2">LOCAL/DESTINO</th>
+            <th class="bg-gray-200 px-4 py-2">TIPO DE SERVIÇO REALIZADO</th>
+            <th class="bg-gray-200 px-4 py-2">BENEFICIADO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Repeat this <tr> block as necessary -->
+          <tr>
+            <td class="border px-4 py-2"></td>
+            <td class="border px-4 py-2"></td>
+            <td class="border px-4 py-2"></td>
+            <td class="border px-4 py-2"></td>
+            <td class="border px-4 py-2"></td>
+            <td class="border px-4 py-2"></td>
+            <td class="border px-4 py-2"></td>
+            <td class="border px-4 py-2"></td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
